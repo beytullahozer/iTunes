@@ -7,11 +7,10 @@
 
 import UIKit
 
-class DetailAlbumViewController: UIViewController {
+class DetailAlbumController: UIViewController {
     
-    var collectionView = UICollectionView()
+    var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     var stackView = UIStackView()
-    
     var album: Album?
     
     override func viewDidLoad() {
@@ -124,6 +123,7 @@ class DetailAlbumViewController: UIViewController {
     private func setImage(urlString: String?){
    
         if let url = urlString {
+            
             NetworkRequest.shared.requestData(urlString: url) { [weak self] result in
                 switch result {
                 case.success(let data):
@@ -141,7 +141,7 @@ class DetailAlbumViewController: UIViewController {
     }
 }
 
-extension DetailAlbumViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension DetailAlbumController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -154,11 +154,11 @@ extension DetailAlbumViewController: UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width, height: 20)
+        return CGSize(width: collectionView.frame.width, height: 20)
     }
 }
 
-extension DetailAlbumViewController{
+extension DetailAlbumController{
     
     func setConstraints(){
         NSLayoutConstraint.activate([

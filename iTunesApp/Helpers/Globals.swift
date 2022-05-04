@@ -2,7 +2,7 @@
 //  Shared.swift
 //  Baby Sleep
 //
-//  Created by Tuna Öztürk on 23.04.2021.
+//  Created by Beytullah Özer on 23.04.2021.
 //
 
 import Foundation
@@ -17,6 +17,8 @@ var stringMultiplier = CGFloat()
 var ScreenWidth_To_ScreenHeight_Converter = CGFloat()
 var ScreenHeight_To_ScreenWidth_Converter = CGFloat()
 var lastObjectFrane = CGRect()
+let uDefaults = UserDefaults.standard
+
 
 func setDefaultSize(view : UIView){
     
@@ -42,60 +44,5 @@ var clr_alert = UIColor(red: 1.00, green: 0.19, blue: 0.19, alpha: 1.00)
 var clr_unselectedTabbarTitle = UIColor(red: 0.67, green: 0.72, blue: 0.78, alpha: 1.00)
 // Default URLs
 
-var  termsURL = URL(string: "https://www.neonapps.co")
-var  privacyURL = URL(string: "https://www.neonapps.co")
 
 
-// Default Font
-
-func font_SFProBold(size : CGFloat) -> UIFont{
-    
-    return UIFont(name: "SFProDisplay-Bold", size: size * stringMultiplier)!
-    
-}
-
-func font_SFProRegular(size : CGFloat) -> UIFont{
-    
-    return UIFont(name: "SFProDisplay-Regular", size: size * stringMultiplier)!
-    
-}
-
-func font_SFProSemiBold(size : CGFloat) -> UIFont{
-    
-    return UIFont(name: "SFProDisplay-Semibold", size: size * stringMultiplier)!
-    
-}
-
-func font_SFProMedium(size : CGFloat) -> UIFont{
-    
-    return UIFont(name: "SFProDisplay-Medium", size: size * stringMultiplier)!
-    
-}
-
-// User Default
-
-let uDefaults = UserDefaults.standard
-
-// Global Objects
-
-//var allInvoices = [Invoice]()
-//var allClients = [Client]()
-//
-//var selectedInvoice = Invoice()
-//var selectedItem = Item()
-//var selectedClient = Client()
-
-enum DiscountType {
-    case fixed
-    case percentage
-}
-
-var selectedDiscountType = DiscountType.fixed
-
-
-enum InvoiceStatus {
-    case outstanding
-    case paid
-}
-
-var selectedInvoiceStatus = InvoiceStatus.outstanding

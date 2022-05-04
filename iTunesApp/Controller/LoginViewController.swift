@@ -72,7 +72,7 @@ class LoginViewController: UIViewController {
         emailLabel.text = "Email"
         emailLabel.numberOfLines = 2
         emailLabel.textAlignment = .left
-        emailLabel.font = font_SFProSemiBold(size: 18)
+        emailLabel.font = UIFont(name: "Graphie-Bold", size: 18 * stringMultiplier)
         emailLabel.frame = CGRect(x: 0 * screenWidth, y: 0.2 * screenHeight, width: 0.8 * screenWidth, height: 0.035 * screenHeight)
         view.addSubview(emailLabel)
         
@@ -93,7 +93,7 @@ class LoginViewController: UIViewController {
         passwordLabel.text = "Password"
         passwordLabel.numberOfLines = 2
         passwordLabel.textAlignment = .left
-        passwordLabel.font = font_SFProSemiBold(size: 18)
+        passwordLabel.font = UIFont(name: "Graphie-Regular", size: 18 * stringMultiplier)
         passwordLabel.frame = CGRect(x: 0 * screenWidth, y: 0 * screenHeight, width: 0.8 * screenWidth, height: 0.035 * screenHeight)
         view.addSubview(passwordLabel)
 
@@ -102,7 +102,7 @@ class LoginViewController: UIViewController {
         view.addSubview(passwordTextField)
         passwordTextField.isSecureTextEntry = true
         passwordTextField.textColor = clr_placeholder
-        passwordTextField.font = font_SFProRegular(size: 14)
+        passwordTextField.font = UIFont(name: "Graphie-Regular", size: 18 * stringMultiplier)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         view.addSubview(passwordTextField)
         
@@ -142,8 +142,8 @@ class LoginViewController: UIViewController {
     @objc func signUpButtonClicked(){
         print("signup")
         
-        let signUpVC = SingUpViewController()
-        self.present(signUpVC, animated: true, completion: nil)
+//        let signUpVC = SingUpViewController()
+//        self.present(signUpVC, animated: true, completion: nil)
     }
     
     @objc func signInButtonClicked(){
@@ -151,13 +151,13 @@ class LoginViewController: UIViewController {
         
         let mail = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        let user = findUserDatabase(mail: mail)
+//        let user = findUserDatabase(mail: mail)
     
         
-        if user == nil {
-            loginLabel.text = "User Not Founded."
-            loginLabel.textColor = .red
-        }
+//        if user == nil {
+//            loginLabel.text = "User Not Founded."
+//            loginLabel.textColor = .red
+//        }
 //        } else if user?.password == password {
 //            let nav
 //        }
@@ -170,11 +170,11 @@ class LoginViewController: UIViewController {
         
         if passwordTextField.text == "" || !isPasswordHidden{
             
-            passwordTextField.font = font_SFProRegular(size: 14)
+            passwordTextField.font = UIFont(name: "Graphie-Regular", size: 20 * stringMultiplier)
             
         }else{
             
-            passwordTextField.font = font_SFProRegular(size: 20)
+            passwordTextField.font = UIFont(name: "Graphie-Regular", size: 20 * stringMultiplier)
             
         }
         
@@ -192,13 +192,13 @@ class LoginViewController: UIViewController {
         }
     }
     
-    private func findUserDatabase(mail: String) -> User? {
-        
-        let database = Database.shared.users
-        print(database)
-        
-        
-    }
+//    private func findUserDatabase(mail: String) -> User? {
+//
+//        let database = Database.shared.users
+//        print(database)
+//
+//
+//    }
     
     
     func isValidEmail(_ email: String) -> Bool {

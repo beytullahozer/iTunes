@@ -25,13 +25,14 @@ class AlbumViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
+        setAddSubviews()
         setDelegates()
         setConstraints()
         setNavigationBar()
         setSearchController()
+        view.backgroundColor = .red
         
-        
-        fetchAlbums(albumName: "Sheffield")
+//        fetchAlbums(albumName: "Sheffield")
         
     }
     
@@ -41,7 +42,6 @@ class AlbumViewController: UIViewController {
     
     private func setupView(){
         
-        setAddSubviews()
         
         discoverBackground.image = UIImage(named: "img_bg")
         discoverBackground.translatesAutoresizingMaskIntoConstraints = false
@@ -52,6 +52,8 @@ class AlbumViewController: UIViewController {
 
         searchView.translatesAutoresizingMaskIntoConstraints = false
 
+        
+        
     }
     
     private func setAddSubviews(){
@@ -63,6 +65,7 @@ class AlbumViewController: UIViewController {
     }
     
     private func setDelegates(){
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -143,8 +146,8 @@ class AlbumViewController: UIViewController {
     
     @objc private func userInfoButtonTapped(){
         
-        let profileViewController = ProfileInfoViewController()
-        navigationController?.pushViewController(ProfileInfoViewController(), animated: true)
+//        let profileViewController = ProfileInfoViewController()
+//        navigationController?.pushViewController(ProfileInfoViewController(), animated: true)
     }
     
 }
@@ -163,14 +166,14 @@ extension AlbumViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell.cell, for: indexPath) as! AlbumTableViewCell
-//        let album = album[indexPath.row]
-//        cell.configureAlbumCell(album: album)
+        let album = album[indexPath.row]
+        cell.configureAlbumCell(album: album)
         return cell
     }
     
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailAlbumViewController = DetailAlbumViewController()
+        let detailAlbumViewController = DetailAlbumController()
         let album = album[indexPath.row]
         detailAlbumViewController.album = album
         detailAlbumViewController.title = album.artistName

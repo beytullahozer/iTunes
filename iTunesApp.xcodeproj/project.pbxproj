@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C030DA027CEB9C2003950BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C030D9F27CEB9C2003950BD /* AppDelegate.swift */; };
-		4C030DA227CEB9C2003950BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C030DA127CEB9C2003950BD /* SceneDelegate.swift */; };
 		4C030DA427CEB9C2003950BD /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C030DA327CEB9C2003950BD /* AlbumViewController.swift */; };
 		4C030DA727CEB9C2003950BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C030DA527CEB9C2003950BD /* Main.storyboard */; };
 		4C030DA927CEB9C3003950BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C030DA827CEB9C3003950BD /* Assets.xcassets */; };
@@ -18,11 +17,10 @@
 		4C030DBC27CEC32B003950BD /* Graphie-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C030DB827CEC32B003950BD /* Graphie-SemiBold.otf */; };
 		4C030DBD27CEC32B003950BD /* Graphie-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C030DB927CEC32B003950BD /* Graphie-Regular.otf */; };
 		4C449BEB27D799CB00F6C081 /* SongsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C449BEA27D799CB00F6C081 /* SongsCollectionViewCell.swift */; };
-		4C449BEF27D8E26000F6C081 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C449BEE27D8E26000F6C081 /* ProfileInfoViewController.swift */; };
 		4C6D08AA27E9C7D200D233C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D08A927E9C7D200D233C4 /* GoogleService-Info.plist */; };
 		4C6D08AC27E9CAC000D233C4 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D08AB27E9CAC000D233C4 /* Globals.swift */; };
+		4C9E3BC1280AEFF100FA3E4A /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E3BC0280AEFF100FA3E4A /* Connection.swift */; };
 		4CC4752F27E796A8007D894C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4752E27E796A8007D894C /* LoginViewController.swift */; };
-		4CC4753127E796B9007D894C /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4753027E796B9007D894C /* SingUpViewController.swift */; };
 		4CC88D1427D0A9D4005DDAFC /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D1327D0A9D4005DDAFC /* AlbumModel.swift */; };
 		4CC88D1727D0FC40005DDAFC /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D1627D0FC40005DDAFC /* NetworkRequest.swift */; };
 		4CC88D1927D0FF07005DDAFC /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D1827D0FF07005DDAFC /* NetworkDataFetch.swift */; };
@@ -30,14 +28,13 @@
 		4CC88D1E27D243EF005DDAFC /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D1D27D243EF005DDAFC /* AlertModel.swift */; };
 		4CC88D2027D24751005DDAFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D1F27D24751005DDAFC /* MainViewController.swift */; };
 		4CC88D2227D249B7005DDAFC /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC88D2127D249B7005DDAFC /* AlbumTableViewCell.swift */; };
-		4CF44DA327D554CC00A15661 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF44DA227D554CC00A15661 /* DetailAlbumViewController.swift */; };
+		4CF44DA327D554CC00A15661 /* DetailAlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF44DA227D554CC00A15661 /* DetailAlbumController.swift */; };
 		6908AB21605BC42833D52522 /* Pods_iTunesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C2DF681EB8FC7AED6A0BC5 /* Pods_iTunesApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C030D9C27CEB9C2003950BD /* iTunesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C030D9F27CEB9C2003950BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C030DA127CEB9C2003950BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4C030DA327CEB9C2003950BD /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		4C030DA627CEB9C2003950BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C030DA827CEB9C3003950BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,11 +45,10 @@
 		4C030DB827CEC32B003950BD /* Graphie-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphie-SemiBold.otf"; sourceTree = "<group>"; };
 		4C030DB927CEC32B003950BD /* Graphie-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphie-Regular.otf"; sourceTree = "<group>"; };
 		4C449BEA27D799CB00F6C081 /* SongsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsCollectionViewCell.swift; sourceTree = "<group>"; };
-		4C449BEE27D8E26000F6C081 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		4C6D08A927E9C7D200D233C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C6D08AB27E9CAC000D233C4 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		4C9E3BC0280AEFF100FA3E4A /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		4CC4752E27E796A8007D894C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4CC4753027E796B9007D894C /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		4CC88D1327D0A9D4005DDAFC /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		4CC88D1627D0FC40005DDAFC /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		4CC88D1827D0FF07005DDAFC /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
@@ -60,7 +56,7 @@
 		4CC88D1D27D243EF005DDAFC /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		4CC88D1F27D24751005DDAFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CC88D2127D249B7005DDAFC /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
-		4CF44DA227D554CC00A15661 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
+		4CF44DA227D554CC00A15661 /* DetailAlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumController.swift; sourceTree = "<group>"; };
 		A1353FF18AFF836CB70A0C4E /* Pods-iTunesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesApp.release.xcconfig"; path = "Target Support Files/Pods-iTunesApp/Pods-iTunesApp.release.xcconfig"; sourceTree = "<group>"; };
 		B45D973E7F888FACEB103B4A /* Pods-iTunesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesApp.debug.xcconfig"; path = "Target Support Files/Pods-iTunesApp/Pods-iTunesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B6C2DF681EB8FC7AED6A0BC5 /* Pods_iTunesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,13 +98,12 @@
 				4C030DBE27CEC336003950BD /* Delegate */,
 				4CC88D1A27D10716005DDAFC /* Model */,
 				4CC88D2327D249BD005DDAFC /* Controller */,
+				4C030DBF27CEC343003950BD /* Cells */,
 				4CC88D1527D0FC12005DDAFC /* Network */,
 				4C030DB527CEC31A003950BD /* Fonts */,
-				4C030DA827CEB9C3003950BD /* Assets.xcassets */,
-				4C030DA527CEB9C2003950BD /* Main.storyboard */,
-				4C030DAA27CEB9C3003950BD /* LaunchScreen.storyboard */,
+				4CB7C25128232E1F00EC7C93 /* Helpers */,
+				4CB7C25228232E2C00EC7C93 /* Resources */,
 				4C6D08A927E9C7D200D233C4 /* GoogleService-Info.plist */,
-				4C6D08AB27E9CAC000D233C4 /* Globals.swift */,
 				4C030DAD27CEB9C3003950BD /* Info.plist */,
 			);
 			path = iTunesApp;
@@ -129,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				4C030D9F27CEB9C2003950BD /* AppDelegate.swift */,
-				4C030DA127CEB9C2003950BD /* SceneDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -143,11 +137,30 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4CB7C25128232E1F00EC7C93 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D08AB27E9CAC000D233C4 /* Globals.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4CB7C25228232E2C00EC7C93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C030DA827CEB9C3003950BD /* Assets.xcassets */,
+				4C030DA527CEB9C2003950BD /* Main.storyboard */,
+				4C030DAA27CEB9C3003950BD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4CC88D1527D0FC12005DDAFC /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4CC88D1627D0FC40005DDAFC /* NetworkRequest.swift */,
 				4CC88D1827D0FF07005DDAFC /* NetworkDataFetch.swift */,
+				4CC88D1627D0FC40005DDAFC /* NetworkRequest.swift */,
+				4C9E3BC0280AEFF100FA3E4A /* Connection.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -167,11 +180,8 @@
 			children = (
 				4CC88D1F27D24751005DDAFC /* MainViewController.swift */,
 				4CC4752E27E796A8007D894C /* LoginViewController.swift */,
-				4CC4753027E796B9007D894C /* SingUpViewController.swift */,
-				4C449BEE27D8E26000F6C081 /* ProfileInfoViewController.swift */,
 				4C030DA327CEB9C2003950BD /* AlbumViewController.swift */,
-				4CF44DA227D554CC00A15661 /* DetailAlbumViewController.swift */,
-				4C030DBF27CEC343003950BD /* Cells */,
+				4CF44DA227D554CC00A15661 /* DetailAlbumController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,20 +325,18 @@
 			files = (
 				4CC4752F27E796A8007D894C /* LoginViewController.swift in Sources */,
 				4C030DA427CEB9C2003950BD /* AlbumViewController.swift in Sources */,
-				4CF44DA327D554CC00A15661 /* DetailAlbumViewController.swift in Sources */,
+				4CF44DA327D554CC00A15661 /* DetailAlbumController.swift in Sources */,
 				4CC88D2027D24751005DDAFC /* MainViewController.swift in Sources */,
 				4CC88D2227D249B7005DDAFC /* AlbumTableViewCell.swift in Sources */,
 				4C449BEB27D799CB00F6C081 /* SongsCollectionViewCell.swift in Sources */,
-				4C449BEF27D8E26000F6C081 /* ProfileInfoViewController.swift in Sources */,
-				4CC4753127E796B9007D894C /* SingUpViewController.swift in Sources */,
 				4CC88D1927D0FF07005DDAFC /* NetworkDataFetch.swift in Sources */,
 				4C030DA027CEB9C2003950BD /* AppDelegate.swift in Sources */,
 				4CC88D1E27D243EF005DDAFC /* AlertModel.swift in Sources */,
 				4CC88D1427D0A9D4005DDAFC /* AlbumModel.swift in Sources */,
 				4C6D08AC27E9CAC000D233C4 /* Globals.swift in Sources */,
 				4CC88D1727D0FC40005DDAFC /* NetworkRequest.swift in Sources */,
-				4C030DA227CEB9C2003950BD /* SceneDelegate.swift in Sources */,
 				4CC88D1C27D10734005DDAFC /* TableViewProduct.swift in Sources */,
+				4C9E3BC1280AEFF100FA3E4A /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
