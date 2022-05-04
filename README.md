@@ -1,9 +1,11 @@
-## iTunes
-
+# iTunes API
+<br>
 ## Define
+<br>
 
-  The names of the Simpsons family are given in the table when the application starts. 
-  When you click on the name, it indicates the person's picture, name and job. You can take a look 👋🏻
+Written with architectural design using the Api of the iTunes music application. With 2 pages, search, tableview, service etc. used. Some companies can share it as a task. I did it, it's your turn!
+
+You can take a look 👋🏻
 
 
 <br>
